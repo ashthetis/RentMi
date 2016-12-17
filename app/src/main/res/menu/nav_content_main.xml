@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_home_title"/>
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_my_profile_title"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_my_rentals"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_my_rentals_title"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_my_listings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_my_listings_title"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_messages_title"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_revenue_hub"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_revenue_hub_title"
+            android:enabled="false"/>
+
+        <item
+            android:id="@+id/nav_listings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_listings_title"
+            android:enabled="false"/>
+    </group>
+
+</menu>

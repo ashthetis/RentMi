@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RentMi</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Navigation Drawer -->
+    <string name="nav_home_title">Home</string>
+    <string name="nav_my_profile_title">My Profile</string>
+    <string name="nav_my_rentals_title">My Rentals</string>
+    <string name="nav_my_listings_title">My Listings</string>
+    <string name="nav_messages_title">Messages</string>
+    <string name="nav_revenue_hub_title">Revenue Hub</string>
+    <string name="nav_listings_title">Listings</string>
+
+
+</resources>
