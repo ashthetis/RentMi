@@ -1,36 +1,45 @@
 package com.rentmi.rentmi.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.FrameLayout;
+
 
 import com.crashlytics.android.Crashlytics;
 import com.rentmi.rentmi.R;
 import com.rentmi.rentmi.fragment.HomeFragment;
+import com.rentmi.rentmi.fragment.ListingFragment;
+import com.rentmi.rentmi.fragment.MessageFragment;
+import com.rentmi.rentmi.fragment.MyListingFragment;
+import com.rentmi.rentmi.fragment.MyRentalFragment;
+import com.rentmi.rentmi.fragment.ProfileFragment;
+import com.rentmi.rentmi.fragment.RevenueHubFragment;
+
+
+import java.util.ArrayList;
 
 import io.fabric.sdk.android.Fabric;
 
 /**
  * The main activity for the entire app. This activity manages a navigation drawer, and embeds the
  * other fragments of the app inside of a content frame.
- *
+ *S
  * @author Declan Hopkins
  */
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
     private DrawerLayout m_drawerLayout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -94,6 +103,31 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         {
             embedFragment(HomeFragment.newInstance());
         }
+        if (id == R.id.nav_my_profile)
+        {
+            embedFragment(ProfileFragment.newInstance());
+        }
+        if (id == R.id.nav_my_rentals)
+        {
+            embedFragment(MyRentalFragment.newInstance());
+        }
+        if (id == R.id.nav_my_listings)
+        {
+            embedFragment(MyListingFragment.newInstance());
+        }
+        if (id == R.id.nav_revenue_hub)
+        {
+            embedFragment(RevenueHubFragment.newInstance());
+        }
+        if (id == R.id.nav_messages)
+        {
+            embedFragment(MessageFragment.newInstance());
+        }
+        if (id == R.id.nav_listings)
+        {
+            embedFragment(ListingFragment.newInstance());
+        }
+
 
         m_drawerLayout.closeDrawer(GravityCompat.START);
 
@@ -107,3 +141,4 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         tx.commit();
     }
 }
+
