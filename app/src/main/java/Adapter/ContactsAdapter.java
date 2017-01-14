@@ -17,7 +17,6 @@ import Model.Contact;
  * @author apill
  */
 
-
 public class ContactsAdapter extends
         RecyclerView.Adapter<ContactsAdapter.ViewHolder>
 {
