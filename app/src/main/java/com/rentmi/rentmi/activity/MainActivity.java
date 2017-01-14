@@ -1,33 +1,19 @@
 package com.rentmi.rentmi.activity;
 
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
-
 import com.crashlytics.android.Crashlytics;
 import com.rentmi.rentmi.R;
-import com.rentmi.rentmi.fragment.HomeFragment;
-import com.rentmi.rentmi.fragment.ListingFragment;
-import com.rentmi.rentmi.fragment.MessageFragment;
-import com.rentmi.rentmi.fragment.MyListingFragment;
-import com.rentmi.rentmi.fragment.MyRentalFragment;
-import com.rentmi.rentmi.fragment.ProfileFragment;
-import com.rentmi.rentmi.fragment.RevenueHubFragment;
-
-
-import java.util.ArrayList;
-
+import com.rentmi.rentmi.fragment.*;
 import io.fabric.sdk.android.Fabric;
 
 /**
